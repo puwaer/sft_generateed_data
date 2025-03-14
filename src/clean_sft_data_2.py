@@ -21,6 +21,6 @@ def process_json_file(input_file, output_file):
 
 
 if __name__ == "__main__":
-    input_json_path = "./data/text_1-1000_split_1_1/text_3.json"
-    output_json_path = "./data/text_1-1000_split_1_1/text_4.json"
+    input_json_path = "./data/text_3.json"
+    output_json_path = "./data/text_4.json"
     process_json_file(input_json_path, output_json_path)

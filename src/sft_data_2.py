@@ -116,9 +116,7 @@ def main(model_path, input_json_path, output_json_path):
 
 if __name__ == "__main__":
     model_path = "./model/Tifa-Deepsex-14b-CoT-Q4_K_M.gguf"
-    input_json_path = "./data/text_1-1000_split_1_1/text_2.json"
-    output_json_path = "./data/text_1-1000_split_1_1/text_3.json"
-    #input_json_path = "./input/text_1-1000_split_1_1.json"
-    #output_json_path = "./data/text_1-1000_sft_1.json"
+    input_json_path = "./data/text_2.json"
+    output_json_path = "./data/text_3.json"
     
     main(model_path, input_json_path, output_json_path)

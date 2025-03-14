@@ -17,8 +17,8 @@ def convert_to_jsonl(input_json_file, output_jsonl_file, id):
             f.write(json.dumps(jsonl_obj, ensure_ascii=False) + "\n")
 
 if __name__ == "__main__":
-    id="text_1-1000_sft_1_1"
-    input_json_path = "./data/text_1-1000_split_1_1/text_4.json"
-    output_json_path = f"./data/text_1-1000_split_1_1/{id}.jsonl"
+    id="test"
+    input_json_path = "./data/text_4.json"
+    output_json_path = f"./data/text_5.jsonl"
     
     convert_to_jsonl(input_json_path, output_json_path, id)
