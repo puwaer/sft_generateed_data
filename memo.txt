@@ -1,0 +1,35 @@
+conda activate make_dataset
+cd document/make_dataset
+
+conda deactivate
+
+python3 sft_generateed_data/inference_gguf.py
+python3 sft_generateed_data/sft_data_1.py
+
+python3 sft_generateed_data/test_env.py
+
+python3 sft_generateed_data/sft_data_part/test_sft_1.py
+
+
+
+docker build -t data_instruct .
+docker ps -a
+docker stop data_instruct
+docker rm data_instruct
+docker run -it --gpus all --name data_instruct data_instruct
+
+
+
+実行コマンド
+cd data_instruct
+
+docker image build -t data_instruct .
+docker container run -it --gpus all --name data_instruct -v $(pwd)/.:/app data_instruct
+docker start -i data_instruct
+
+python3 sample.py
+python3 sft_generateed_data/sft_data_1.py
+python3 sft_generateed_data/clean_sft_data_1.py
+python3 sft_generateed_data/sft_data_2.py
+python3 sft_generateed_data/clean_sft_data_2.py
+python3 sft_generateed_data/format_jsonl.py
