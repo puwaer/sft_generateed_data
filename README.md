@@ -2,20 +2,6 @@
 
 このプロジェクトは、WebからスクレイピングしたテキストデータをLLMを用いてSFT（Supervised Fine-Tuning）用のデータセットに変換するプログラムです。
 
-## 環境セットアップ
-
-### 1. Conda環境の作成と有効化
-```bash
-conda activate make_dataset
-cd document/make_dataset
-```
-
-### 2. 環境の終了
-```bash
-conda deactivate
-```
-
----
 
 ## Docker環境のセットアップ
 
