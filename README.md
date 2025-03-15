@@ -35,9 +35,9 @@ python3 src/format_jsonl.py
 
 ### 各スクリプトの役割
 1. **sft_data_1.py**: 質問文のテキストを作成
-2. **clean_sft_data_1.py**: 使用したモデルがCOT（Chain of Thought）を含むため、`</think>` 以降のテキストのみ抽出
+2. **clean_sft_data_1.py**: 使用したモデルがCOTに対応したモデルのため、`</think>` 以降のテキストのみ抽出
 3. **sft_data_2.py**: 回答文のテキストを作成
-4. **clean_sft_data_2.py**: 使用したモデルがCOTを含むため、`</think>` 以降のテキストのみ抽出
+4. **clean_sft_data_2.py**: 使用したモデルがCOTに対応したモデルのため、`</think>` 以降のテキストのみ抽出
 5. **format_jsonl.py**: SFTで使用するJSONL形式に変換
 
 ---
