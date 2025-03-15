@@ -1,6 +1,6 @@
 # SFT Dataset Generation
 
-このプロジェクトは、WebからスクレイピングしたテキストデータをLLMを用いてSFT（Supervised Fine-Tuning）用のデータセットに変換するプログラムです。
+このプロジェクトは、WebからスクレイピングしたテキストデータとLLMを用いてSFT（Supervised Fine-Tuning）用のデータセットに変換するプログラムです。
 
 
 ## Docker環境のセットアップ
